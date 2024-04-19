@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+    font-family: 'Roboto Mono', monospace; /* Use Roboto Mono font for all text */
+    margin: 1in; /* 1 inch from each respective margin */
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+/* Header Styles */
+header {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center; /* Align items vertically */
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+#light-switch-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+}
+
+#lightbulb {
+    width: 24px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
+    background-image: url('lightbulbs/darkbulb.png'); /* Specify the path to your lightbulb image */
+    background-size: cover; /* Ensure the image covers the specified dimensions */
+    margin-right: 10px; /* Adjust margin as needed to separate from the switch button */
+}
+
+#light-switch {
+    width: 50px; /* Adjust width as needed */
+    height: 24px; /* Adjust height as needed */
+    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+    border-radius: 15px; /* Half of the height to make it round */
+    border: none; /* Remove border */
+    cursor: pointer;
+    outline: none; /* Remove focus outline */
+    margin-top: -3px;
+}
+
+.light-mode {
+    background-color: #fff;
+    color: black;
+    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+}
+
+.light-mode header {
+    background-color: #fff;
+    color: black;
+    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+}
+
+.light-mode nav ul a{
+    background-color: #fff;
+    color: black;
+    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+}
+
+.dark-mode header {
+    background-color: black;
+    color: white;
+    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+}
+
+.dark-mode nav ul a{
+    background-color: black;
+    color: white;
+    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+}
+
+/* Positioning and styling for tidbit */
+.tidbit {
+    width: 76%;
+    padding: 50px;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    margin-left: -50px;
+    line-height: 1.5;
+    font-weight: lighter; /* Adjust font weight as needed */
+    clear: both; /* Add clear property */
+}
+
+/* Other Section Styles */
+section {
+    padding: 50px 20px;
+}
+
+/* Project Cards */
+.project-card {
+    background-color: #222;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card p {
+    margin-bottom: 0;
+}
