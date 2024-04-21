@@ -1,7 +1,7 @@
 /* General Styles */
 body {
-    font-family: 'Roboto Mono', monospace; /* Use Roboto Mono font for all text */
-    margin: 1in; /* 1 inch from each respective margin */
+    font-family: 'Roboto Mono', monospace;
+    margin: 1in;
     padding: 0;
     background-color: #000;
     color: #fff;
@@ -16,13 +16,18 @@ header {
     align-items: center;
 }
 
+/* Other Section Styles */
+section {
+    padding: 50px 20px;
+}
+
 /* Navigation Styles */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    align-items: center; /* Align items vertically */
+    align-items: center;
 }
 
 nav ul li {
@@ -38,64 +43,69 @@ nav ul li a:hover {
     color: red;
 }
 
+/* container for light switch icon*/
 #light-switch-container {
-    display: flex; /* Use flexbox for layout */
-    align-items: center; /* Align items vertically */
+    display: flex;
+    align-items: center;
 }
 
+/* container for lightbulb symbol*/
 #lightbulb {
-    width: 24px; /* Adjust width as needed */
-    height: 24px; /* Adjust height as needed */
-    background-image: url('lightbulbs/darkbulb.png'); /* Specify the path to your lightbulb image */
-    background-size: cover; /* Ensure the image covers the specified dimensions */
-    margin-right: 10px; /* Adjust margin as needed to separate from the switch button */
+    width: 24px;
+    height: 24px;
+    background-image: url('lightbulbs/darkbulb.png');
+    background-size: cover;
+    margin-right: 10px;
 }
 
+/* light switch style*/
 #light-switch {
-    width: 50px; /* Adjust width as needed */
-    height: 24px; /* Adjust height as needed */
-    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
-    border-radius: 15px; /* Half of the height to make it round */
-    border: none; /* Remove border */
+    width: 50px;
+    height: 24px;
+    transition: background-color .5s, color .5s;
+    border-radius: 15px;
+    border: none;
     cursor: pointer;
-    outline: none; /* Remove focus outline */
+    outline: none;
     margin-top: -3px;
 }
 
+/* style page light mode*/
 .light-mode {
     background-color: #fff;
     color: black;
-    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+    transition: background-color .5s, color .5s; 
 }
 
 .light-mode header {
     background-color: #fff;
     color: black;
-    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+    transition: background-color .5s, color .5s; 
 }
 
 .light-mode nav ul a{
     background-color: #fff;
     color: black;
-    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+    transition: background-color .5s, color .5s; 
 }
 
+/* style page dark mode*/
 .dark-mode {
     background-color: black;
     color: white;
-    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+    transition: background-color .5s, color .5s; 
 }
 
 .dark-mode header {
     background-color: black;
     color: white;
-    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+    transition: background-color .5s, color .5s; 
 }
 
 .dark-mode nav ul a{
     background-color: black;
     color: white;
-    transition: background-color .5s, color .5s; /* Add transition for background-color and color */
+    transition: background-color .5s, color .5s; 
 }
 
 /* Positioning and styling for tidbit */
@@ -106,27 +116,48 @@ nav ul li a:hover {
     margin-bottom: 50px;
     margin-left: -50px;
     line-height: 1.5;
-    font-weight: lighter; /* Adjust font weight as needed */
-    clear: both; /* Add clear property */
+    font-weight: lighter; 
+    clear: both; 
 }
 
-/* Other Section Styles */
-section {
-    padding: 50px 20px;
+/* Profile Image Styles */
+.profile-image {
+    float: left; 
+    width: 200px; 
+    height: auto; 
+    margin-right: 20px; 
+    padding-top: 25px;
 }
 
-/* Project Cards */
-.project-card {
-    background-color: #222;
-    border-radius: 5px;
-    padding: 20px;
-    margin-bottom: 20px;
+/* About Me Section Styles */
+#about-me {
+    overflow: hidden; 
+    padding-top: 0px; 
 }
 
-.project-card h3 {
-    margin-top: 0;
+/* position behavior project cards*/
+.project-container {
+    display: flex; 
+    align-items: flex-start;
+    margin-bottom: 50px; 
 }
 
-.project-card p {
-    margin-bottom: 0;
+/* deminsion for images*/
+.project-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+    position: relative; 
+}
+
+.project-description {
+    flex: 1; 
+}
+
+.project-description h3 {
+    margin-top: 0; 
+    padding-top: 10px;
 }
