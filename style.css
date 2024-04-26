@@ -145,7 +145,7 @@ nav ul li a:hover {
 /* deminsion for images*/
 .project-image {
     float: left;
-    width: 200px;
+    width: 400px;
     height: auto;
     margin-right: 20px;
     border-radius: 20px;
@@ -159,5 +159,5 @@ nav ul li a:hover {
 
 .project-description h3 {
     margin-top: 0; 
-    padding-top: 10px;
+    padding-top: 0px;
 }
