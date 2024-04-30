@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Define image URLs for light and dark modes
     const lightBulbImages = {
-        light: 'lightbulbs/whitebulb.png',
-        dark: 'lightbulbs/darkbulb.png'
+        light: 'lightbulbs/whitebulb1.png',
+        dark: 'lightbulbs/darkbulb1.png'
     };
 
     switchButton.addEventListener('click', function() {
